@@ -1,5 +1,5 @@
 const searchInput = document.getElementById('search-input');
-const searchButton = document.getElementById('search-button');
+const searchForm = document.getElementById('search-form');
 const pokemonName = document.getElementById('pokemon-name');
 const pokemonId = document.getElementById('pokemon-id');
 const weight = document.getElementById('weight');
@@ -35,7 +35,12 @@ const fetchPokemon = async () => {
         specialAttack.textContent = data.stats[3].base_stat;
         specialDefense.textContent = data.stats[4].base_stat;
         speed.textContent = data.stats[5].base_stat;
+
+        types.innerHTML = data.types
+            .map(obj => `<span class='type ${obj.type.name}'>${obj.type.name}</span>`)
+            .join('');
     } catch (err) {
         alert('Pokémon not found');
+        console.log(`Error: ${err}`);
     }
 };
