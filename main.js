@@ -44,3 +44,8 @@ const fetchPokemon = async () => {
         console.log(`Error: ${err}`);
     }
 };
+
+searchForm.addEventListener('submit', e => {
+    e.preventDefault();
+    fetchPokemon();
+});
