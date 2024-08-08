@@ -30,6 +30,7 @@ const resetDisplay = () => {
     specialAttack.textContent = '';
     specialDefense.textContent = '';
     speed.textContent = '';
+    types.innerHTML = '';
 };
 
 const fetchPokemon = async () => {
@@ -61,9 +62,9 @@ const fetchPokemon = async () => {
 
         searchInput.value = '';
     } catch (err) {
-        alert('Pokémon not found');
-        console.log(`Error: ${err}`);
         resetDisplay();
+        console.log(`Error: ${err}`);
+        alert('Pokémon not found');
     }
 };
 
