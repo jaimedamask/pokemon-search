@@ -56,7 +56,7 @@ const fetchPokemon = async () => {
         speed.textContent = data.stats[5].base_stat;
 
         types.innerHTML = data.types
-            .map(obj => `<span class='type ${obj.type.name}'>${obj.type.name}</span>`)
+            .map(obj => `<span class='type ${obj.type.name}'>${obj.type.name.toUpperCase()}</span>`)
             .join('');
 
         searchInput.value = '';
