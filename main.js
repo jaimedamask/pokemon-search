@@ -13,6 +13,25 @@ const specialAttack = document.getElementById('special-attack');
 const specialDefense = document.getElementById('special-defense');
 const speed = document.getElementById('speed');
 
+const resetDisplay = () => {
+    const sprite = document.getElementById('sprite');
+    if (sprite) {
+        sprite.remove();
+    }
+
+    searchInput.value = '';
+    pokemonName.textContent = '';
+    pokemonId.textContent = '';
+    weight.textContent = '';
+    height.textContent = '';
+    hp.textContent = '';
+    attack.textContent = '';
+    defense.textContent = '';
+    specialAttack.textContent = '';
+    specialDefense.textContent = '';
+    speed.textContent = '';
+};
+
 const fetchPokemon = async () => {
     try {
         const nameOrId = searchInput.value.toLowerCase();
@@ -39,9 +58,12 @@ const fetchPokemon = async () => {
         types.innerHTML = data.types
             .map(obj => `<span class='type ${obj.type.name}'>${obj.type.name}</span>`)
             .join('');
+
+        searchInput.value = '';
     } catch (err) {
         alert('Pokémon not found');
         console.log(`Error: ${err}`);
+        resetDisplay();
     }
 };
 
