@@ -37,3 +37,76 @@ th, td {
     background-color: #5F7CDB;
     padding: 4px;
 }
+
+/* Pokémon Types */
+.bug {
+    background-color: #89960F;
+}
+
+.dark {
+    background-color: #503B2F;
+}
+
+.dragon {
+    background-color: #7961E4;
+}
+
+.electric {
+    background-color: #F3AB0F;
+}
+
+.fairy {
+    background-color: #F3AFF2;
+}
+
+.fighting {
+    background-color: #81341d;
+}
+
+.fire {
+    background-color: #CB2401;
+}
+
+.flying {
+    background-color: #7285DF;
+}
+
+.ghost {
+    background-color: #5A58AB;
+}
+
+.grass {
+    background-color: #6EBC30;
+}
+
+.ground {
+    background-color: #D3B257;
+}
+
+.ice {
+    background-color: #8BDEFA;
+}
+
+.normal {
+    background-color: #C6C2B8;
+}
+
+.poison {
+    background-color: #8C428E;
+}
+
+.psychic {
+    background-color: #EB4681;
+}
+
+.rock {
+    background-color: #9E863D;
+}
+
+.steel {
+    background-color: #8C8E9F;
+}
+
+.water {
+    background-color: #2587E6;
+}
