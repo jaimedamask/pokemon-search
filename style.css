@@ -28,7 +28,7 @@ body {
 
 table {
     border-spacing: 5px;
-    margin: 0 auto;
+    margin: 3px auto;
     text-align: left;
     width: 260px;
 }
@@ -39,6 +39,11 @@ th, td {
 }
 
 /* Pokémon Types */
+#types {
+    margin-left: 5px;
+    text-align: left;
+}
+
 .type {
     border-radius: 3px;
     color: #fff;
