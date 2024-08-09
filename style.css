@@ -1,5 +1,7 @@
 body {
     align-items: center;
+    background-color: #0E0C22;
+    color: #fff;
     display: flex;
     flex-direction: column;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
