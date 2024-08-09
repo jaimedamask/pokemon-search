@@ -11,6 +11,7 @@ body {
     background-image: linear-gradient(to bottom right, #708ADF, #DBE2F7);
     border: 12px solid #FFC501;
     border-radius: 9px;
+    color: #000;
     padding: 9px;
     text-align: center;
 }
