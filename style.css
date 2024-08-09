@@ -6,7 +6,7 @@ body {
 }
 
 #output {
-    background-image: linear-gradient(to bottom right, #5F7CDB, #DBE2F7);
+    background-image: linear-gradient(to bottom right, #708ADF, #DBE2F7);
     border: 12px solid #FFC501;
     border-radius: 9px;
     padding: 9px;
@@ -15,4 +15,16 @@ body {
 
 #top-output {
     height: 157px;
+}
+
+table {
+    border-spacing: 5px;
+    margin: 0 auto;
+    text-align: left;
+    width: 260px;
+}
+
+th, td {
+    background-color: #5F7CDB;
+    padding: 4px;
 }
